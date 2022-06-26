@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		55565ED8AF3F701A0A506AD8 /* Pods_DoitDowith.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D91451A2ACE0998F46023B /* Pods_DoitDowith.framework */; };
+		EE89DFA12868A951008E9639 /* MainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE89DFA02868A951008E9639 /* MainProtocols.swift */; };
 		EEA0EA5E2868985E00CBBDF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA0EA5D2868985E00CBBDF4 /* AppDelegate.swift */; };
 		EEA0EA602868985E00CBBDF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA0EA5F2868985E00CBBDF4 /* SceneDelegate.swift */; };
-		EEA0EA622868985E00CBBDF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA0EA612868985E00CBBDF4 /* ViewController.swift */; };
+		EEA0EA622868985E00CBBDF4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA0EA612868985E00CBBDF4 /* MainViewController.swift */; };
 		EEA0EA652868985E00CBBDF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA0EA632868985E00CBBDF4 /* Main.storyboard */; };
 		EEA0EA672868985E00CBBDF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEA0EA662868985E00CBBDF4 /* Assets.xcassets */; };
 		EEA0EA6A2868985E00CBBDF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA0EA682868985E00CBBDF4 /* LaunchScreen.storyboard */; };
@@ -21,10 +22,11 @@
 		4F86CAB668FF8D245958AFE2 /* Pods-DoitDowith.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoitDowith.debug.xcconfig"; path = "Target Support Files/Pods-DoitDowith/Pods-DoitDowith.debug.xcconfig"; sourceTree = "<group>"; };
 		87D91451A2ACE0998F46023B /* Pods_DoitDowith.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoitDowith.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D452BF83A185F68D6A20034 /* Pods-DoitDowith.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoitDowith.release.xcconfig"; path = "Target Support Files/Pods-DoitDowith/Pods-DoitDowith.release.xcconfig"; sourceTree = "<group>"; };
+		EE89DFA02868A951008E9639 /* MainProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProtocols.swift; sourceTree = "<group>"; };
 		EEA0EA5A2868985E00CBBDF4 /* DoitDowith.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoitDowith.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEA0EA5D2868985E00CBBDF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEA0EA5F2868985E00CBBDF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EEA0EA612868985E00CBBDF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EEA0EA612868985E00CBBDF4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EEA0EA642868985E00CBBDF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEA0EA662868985E00CBBDF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEA0EA692868985E00CBBDF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +63,71 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		EE18CFF62868AC59001B5698 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EE89DFA02868A951008E9639 /* MainProtocols.swift */,
+				EE89DF992868A8B4008E9639 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EE2E7C9B2868AB8D00BCD76E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EEA0EA662868985E00CBBDF4 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EE89DF942868A842008E9639 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				EE89DF972868A869008E9639 /* OthersTabModule */,
+				EE89DF962868A863008E9639 /* CalenderTabModule */,
+				EE89DF952868A860008E9639 /* HomeTabModule */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		EE89DF952868A860008E9639 /* HomeTabModule */ = {
+			isa = PBXGroup;
+			children = (
+				EE18CFF62868AC59001B5698 /* Home */,
+			);
+			path = HomeTabModule;
+			sourceTree = "<group>";
+		};
+		EE89DF962868A863008E9639 /* CalenderTabModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CalenderTabModule;
+			sourceTree = "<group>";
+		};
+		EE89DF972868A869008E9639 /* OthersTabModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OthersTabModule;
+			sourceTree = "<group>";
+		};
+		EE89DF992868A8B4008E9639 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EEA0EA632868985E00CBBDF4 /* Main.storyboard */,
+				EEA0EA612868985E00CBBDF4 /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE89DF9F2868A91E008E9639 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		EEA0EA512868985E00CBBDF4 = {
 			isa = PBXGroup;
 			children = (
@@ -84,11 +151,10 @@
 			isa = PBXGroup;
 			children = (
 				EEC334CB28689F7000F8A8D4 /* Application */,
-				EEA0EA612868985E00CBBDF4 /* ViewController.swift */,
-				EEA0EA632868985E00CBBDF4 /* Main.storyboard */,
-				EEA0EA662868985E00CBBDF4 /* Assets.xcassets */,
+				EE89DF9F2868A91E008E9639 /* Common */,
+				EE89DF942868A842008E9639 /* Module */,
+				EE2E7C9B2868AB8D00BCD76E /* Resources */,
 				EEA0EA682868985E00CBBDF4 /* LaunchScreen.storyboard */,
-				EEA0EA6B2868985E00CBBDF4 /* Info.plist */,
 			);
 			path = DoitDowith;
 			sourceTree = "<group>";
@@ -96,6 +162,7 @@
 		EEC334CB28689F7000F8A8D4 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				EEA0EA6B2868985E00CBBDF4 /* Info.plist */,
 				EEA0EA5D2868985E00CBBDF4 /* AppDelegate.swift */,
 				EEA0EA5F2868985E00CBBDF4 /* SceneDelegate.swift */,
 			);
@@ -236,7 +303,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEA0EA622868985E00CBBDF4 /* ViewController.swift in Sources */,
+				EE89DFA12868A951008E9639 /* MainProtocols.swift in Sources */,
+				EEA0EA622868985E00CBBDF4 /* MainViewController.swift in Sources */,
 				EEA0EA5E2868985E00CBBDF4 /* AppDelegate.swift in Sources */,
 				EEA0EA602868985E00CBBDF4 /* SceneDelegate.swift in Sources */,
 			);
@@ -388,7 +456,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DU7FSA5JUQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DoitDowith/Info.plist;
+				INFOPLIST_FILE = DoitDowith/Appication/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -418,7 +486,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DU7FSA5JUQ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DoitDowith/Info.plist;
+				INFOPLIST_FILE = DoitDowith/Appication/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
