@@ -1,0 +1,6 @@
+disabled_rules:
+included:
+excluded:
+- Pods
+- Application/AppDelegate.swift
+- Application/SceneDelegate.swift
